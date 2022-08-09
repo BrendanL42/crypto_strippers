@@ -1,0 +1,106 @@
+.chips {
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.modelCircles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.amount {
+  list-style: none;
+  padding: 0;
+}
+
+.modelCircle {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background: rgb(230, 230, 230);
+  margin: -1em auto 1em auto;
+  cursor: pointer;
+}
+
+.modelCircleSelected {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: rgb(237, 108, 2);
+  margin: -1em auto 1em auto;
+  cursor: pointer;
+}
+
+.sliders {
+  width: 100%;
+  margin: 2em auto 1em auto;
+}
+
+.sliders p {
+  text-align: center;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+.invoiceWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  text-align: center;
+}
+
+.invoice {
+  list-style: none;
+  padding: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.total {
+  text-align: center;
+  margin: 0 auto 1.4em auto;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.invoiceWrapper summary {
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.time {
+  font-size: 1.3em;
+  color: rgb(237, 108, 2);
+  font-weight: 800;
+}
+
+.timePickerWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}

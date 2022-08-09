@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 1em 5em 1em;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+.photoWrapper {
+  margin: 1.6em 0 2.7em 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 190px;
+  height: auto;
+}
+
+.plaHol {
+  height: 140px;
+  width: 140px;
+  background-color: RGB(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.box {
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.thumbnail {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 200;
+  position: absolute;
+  bottom: -28px;
+  left: 30px;
+}
+
+.atributes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 8px;
+}
+
+.save {
+  padding: 10px 20px;
+  color: white;
+  font-weight: 800;
+  font-size: 1.1em;
+  border: 2px solid rgb(192, 34, 145);
+  border-radius: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: transparent;
+  margin: 1em auto;
+  width: 90%;
+}
+
+.save:hover {
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 1.1em;
+}
+
+@media (min-width: 546px) {
+  .photoWrapper {
+    grid-template-columns: repeat(3, 3fr);
+  }
+}
+
+@media (min-width: 700px) {
+  .photoWrapper {
+    grid-template-columns: repeat(4, 3fr);
+  }
+}

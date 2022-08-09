@@ -1,0 +1,39 @@
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageWrapper img {
+  border-radius: 50%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100%;
+  background-color: #212121;
+}
+
+.wrapper h1 {
+  font-weight: 200;
+}
+
+.payments {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payments span:first-of-type {
+  font-size: 1.3em;
+  color: red;
+}
+
+.payments span:last-of-type {
+  font-size: 1.1em;
+  color: rgb(218, 218, 218);
+}

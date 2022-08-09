@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  height: 100%;
+  width: 90%;
+  overflow-y: scroll;
+}
+

@@ -1,0 +1,46 @@
+.wrapper {
+    height: 130vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    margin: -3em 0 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 5em 5em 5em;
+}
+
+.wrapper h1 {
+  margin: 1em 0 0 0 ;
+  text-align: center;
+  vertical-align: center;
+  padding: 0;
+  font-size: 3em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.loader {
+    position: fixed;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, -30%);
+    z-index: 1000;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+  }
+  
+  .loader img {
+    animation: rotation 1.7s infinite linear !important;
+    height: 120px;
+    width: 120px;
+  }
+
+@keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }

@@ -1,0 +1,10 @@
+.page {
+  margin: 2em auto 1em auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page span {
+  cursor: pointer;
+  color: #fff;
+}

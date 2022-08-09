@@ -1,0 +1,25 @@
+.loader {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1000;
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+}
+
+.loader img {
+  animation: rotation 1.4s infinite linear;
+  height: 120px;
+  width: 120px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}

@@ -1,0 +1,37 @@
+.chat {
+  background: #fff;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  margin-right: 0.5em;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(184, 21, 21);
+  margin-left: 0.5em;
+}
+
+.wrapper {
+  background: rgb(32, 32, 32);
+  min-height: 100vh;
+  padding-top: 54px;
+  position: relative;
+  overflow: hidden;
+}
+
+.noBookings {
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  position: absolute;
+  margin-top: 6em;
+  right: 50%;
+  transform: translate(50%);
+}

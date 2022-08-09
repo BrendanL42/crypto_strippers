@@ -1,0 +1,91 @@
+.wrapper {
+  height: auto;
+  padding: 0 1em 6em 1em;
+}
+
+.wrapper p {
+  margin: 1em auto 2em auto;
+  font-size: 1.2em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.list {
+  color: #fff;
+  height: 240px;
+  margin: 2em auto 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+/* width */
+.list::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(216, 216, 216, 0.596);
+  border-radius: 10px;
+}
+
+/* Handle */
+.list::-webkit-scrollbar-thumb {
+  background: #ed6c02be;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.list::-webkit-scrollbar-thumb:hover {
+  background: #c25a04;
+}
+
+.list li {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.chips {
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.date {
+  background-color: rgba(255, 255, 255, 0.247);
+  border-radius: 10px;
+  color: rgb(255, 255, 255) !important;
+  height: 50px;
+  width: 80%;
+  margin: 2em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.date::after {
+  content: "Block Days";
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 420px) {
+  .chips {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

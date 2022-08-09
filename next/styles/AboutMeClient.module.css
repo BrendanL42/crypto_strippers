@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 1em 5em 1em;
+  margin: 0 auto;
+  position: relative;
+  background-image: radial-gradient(
+    circle,
+    #750b0b,
+    #5b0a14,
+    #3f0c15,
+    #240b10,
+    #000000
+  );
+}
+
+.save {
+  padding: 10px 20px;
+  color: white;
+  font-weight: 800;
+  font-size: 1.1em;
+  border: 2px solid rgb(192, 34, 145);
+  border-radius: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: transparent;
+  margin: 1em auto;
+  width: 90%;
+}
+
+.save:hover {
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 1.1em;
+}
+
+.btnWrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,34 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.label {
+  padding: 0 0 0 0.4em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+
+.textWrapper:first-of-type {
+  margin: 0em 0 0em 0;
+}
+
+.textWrapper:last-of-type {
+  margin: -1em 0 0em 0;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

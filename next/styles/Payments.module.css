@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.price {
+  border: 2px solid #fff;
+  color: rgb(226, 226, 226);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0.7em;
+}
+
+.info {
+  font-size: 1.9em;
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(237, 108, 2);
+}
+
+.infoPara {
+  text-align: center;
+  width: 100%;
+  font-weight: 300;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceList {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 1em auto 1em auto;
+}
+
+.updated {
+  margin: 1em 0 3em 0;
+}
+
+.container button {
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.2em;
+  border: 3px solid #24a19c;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+  overflow-y: scroll;
+}
+
+.container button:hover {
+  color: rgb(237, 108, 2);
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (orientation: landscape) {
+  .close {
+    top: 250px;
+    right: 30px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+  .close {
+    top: 50px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

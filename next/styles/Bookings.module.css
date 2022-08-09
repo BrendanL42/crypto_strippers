@@ -1,0 +1,142 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #212121;
+  position: relative;
+  padding-top: 47px;
+}
+
+.noBookings {
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translate(50%, -25%);
+}
+
+.heading {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.accept {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.name {
+  color: #072227;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.state {
+  color: #254606;
+  font-size: 0.9em;
+  font-weight: 800;
+  text-align: center;
+  margin: 1em 0 1em 0;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    color: #254606;
+  }
+
+  100% {
+    color: #862323;
+  }
+}
+
+.start {
+  color: rgb(82, 82, 82);
+  font-size: 3.2vw;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0.1em 0;
+  line-height: 1.7;
+}
+
+.contact {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+.settings {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+}
+
+.address {
+  color: rgb(82, 82, 82);
+  font-size: 3vw;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0.2em 0;
+  line-height: 1.7;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.requested {
+  border: 4px solid rgb(255, 0, 0);
+}
+
+.confirm {
+  border: 4px solid rgb(24, 112, 47);
+}
+
+.other {
+  border: none;
+}
+
+@media screen and (min-width: 500px) {
+  .start {
+    font-size: 1em;
+  }
+
+  .address {
+    font-size: 1em;
+  }
+}
+
+
+.paymentInfo {
+  color: rgba(37, 37, 37, 0.767);
+  text-align: center;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.paymentAd {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: rgb(168, 53, 24);
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.8;
+}

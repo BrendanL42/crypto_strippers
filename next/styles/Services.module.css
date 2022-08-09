@@ -1,0 +1,90 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  padding: 0 1em 6em 1em;
+}
+
+.specWrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin: 1em 0 1.5em 0;
+  text-align: center;
+}
+
+.indShow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0 0 0;
+}
+
+.indShow span {
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+}
+.sliders {
+  margin: -2em 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.sliders span {
+  color: #ed6c02;
+}
+
+.subLabel {
+  font-size: 1em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.btnsPrices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.amount {
+  color: #fff !important;
+  font-size: 1.4em;
+  margin: 1em auto 2em auto;
+}
+
+.customBtnGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 470px) {
+  .customBtnGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
